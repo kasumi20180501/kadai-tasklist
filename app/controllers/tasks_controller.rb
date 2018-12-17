@@ -41,7 +41,7 @@ def update
   end
 
 def destroy
-    @task = Tasks.find(params[:id])
+    @task = Task.find(params[:id])
     @task.destroy
 
     flash[:success] = 'task は正常に削除されました'
